@@ -7,12 +7,6 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.get("/api/", (req, res) => {
-  res.json({
-    message: "Welcome to the API schetech",
-  });
-});
-
 app.use("/api/users", userRoutes);
 
 module.exports = app;
